@@ -1,1 +1,19 @@
+@import '../../commmon/colors.scss';
 
+.movie-list {
+  margin: 20px 0;
+
+  > h2 {
+    text-align: center;
+    color: $secondary-font;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
