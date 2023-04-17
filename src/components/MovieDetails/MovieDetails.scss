@@ -1,1 +1,60 @@
+@import '../../commmon/colors.scss';
 
+.movie-detail {
+  margin: 20px 0;
+  color: $primary-font;
+  font-weight: 400;
+
+  .movie-section {
+    display: flex;
+
+    &__left {
+      > h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      &__info-top {
+        display: flex;
+        color: $secondary-font;
+        margin-bottom: 20px;
+
+        > span {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+        }
+
+        > span .icon-star {
+          color: $yellow;
+        }
+
+        > span svg {
+          color: $primary-font;
+          margin: 0 5px;
+        }
+      }
+
+      > p {
+        margin-bottom: 15px;
+        line-height: 1.8rem;
+      }
+
+      &__info-bottom {
+        > div {
+          margin-bottom: 10px;
+
+          > span:first-child {
+            font-weight: 600;
+            width: 100px;
+            display: inline-block;
+          }
+
+          > span:nth-child(2) {
+            color: $secondary-font;
+          }
+        }
+      }
+    }
+  }
+}
